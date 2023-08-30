@@ -29,7 +29,11 @@
     <script src="node_modules/bootstrap/dist//js/bootstrap.min.js" defer></script>
   </head>
 
-
+<style>
+  .custom-Color{
+   background-color: #05383B
+  }
+</style>
 
 
   <body>
@@ -47,8 +51,17 @@
 
       <!--offsett can be used to like center it iguess-->
       <div class="row bg-custom-">
-        <div class="col-sm-4  offset-2">col1</div> <!--order here is a CSS attribute to which we can switch positions of elements-->
-        <div class="col-sm-4 offset-2">col2</div>
+        <div class="col-sm-4  offset-2">
+          <div class="p-3 border bg-light-subtle">
+            col1
+          </div>
+
+          </div> <!--order here is a CSS attribute to which we can switch positions of elements-->
+        <div class="col-sm-4 offset-2 custom-Color">
+          <div class="p-3 border bg-light-subtle">
+            col2
+          </div>
+        </div>
       </div>
 
 
